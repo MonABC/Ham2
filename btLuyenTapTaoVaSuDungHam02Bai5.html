@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let min="";
+    function number(a,b,c) {
+        if (a>b && b>c){
+            min===c;
+            return c;
+        }else if(a>b && c>b){
+            min===b;
+            return b;
+        }else if (b>a && c>a){
+            min===a;
+            return a;
+        }
+
+    }
+    let numberA=prompt("number1")
+    let numberB=prompt("number2");
+    let numberC=prompt("number3")
+   let ketqua= number(numberA,numberB,numberC);
+alert(ketqua)
+</script>
+</body>
+</html>

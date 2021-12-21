@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str=prompt("nhapmang")
+    let array=str.split(","); //chú ý: nếu không có dấu , split sẽ hiểu mỗi lân nhập la 1 chuôi.
+    // còn thêm dấu , thi mỗi lần nhập mình tự viết dâu , đê split hiêu
+
+    let cout=0;
+    function checkNumber(number,arr) {
+        for (let i=0;i<arr.length; i++){
+            if (number===arr[i]){
+                cout++
+            }
+        }
+        if (cout<1){
+            alert(-1)
+        }else {
+            alert(cout)
+        }
+    }
+let a= prompt("nhap number")
+    checkNumber(a, array)
+</script>
+</body>
+</html>

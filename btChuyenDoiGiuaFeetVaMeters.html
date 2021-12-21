@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="inNumber">
+<button onclick="meter()" >meter</button>
+<button onclick="foot()">foot</button>
+<br>
+<p >Result:  <span id="ketqua"></span> </p>
+<script>
+    function footToMeter(foot) {
+        let meter=0.305*foot;
+        return meter;
+    }
+    function meterToFoot(meter) {
+        let foot=3.279*meter
+        return foot;
+    }
+   function meter() {
+      let inNumber= document.getElementById("inNumber").value;
+       let resultMeter = footToMeter(inNumber)
+       document.getElementById("ketqua").innerHTML=resultMeter;
+   }
+    function foot() {
+        let inNumber= document.getElementById("inNumber").value;
+        let resultFoot = meterToFoot(inNumber)
+        document.getElementById("ketqua").innerHTML= resultFoot;
+    }
+
+</script>
+</body>
+</html>

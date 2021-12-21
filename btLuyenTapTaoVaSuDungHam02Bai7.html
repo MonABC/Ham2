@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let c = ""
+
+    function doiCho(a, b) {
+        let c = a;
+        a = b;
+        b = c;
+        alert("so thu 1 la: " + a + "So thu 2 la: " + b);
+    }
+
+    let numberA = prompt("number1");
+    let numberB = prompt("number2");
+    doiCho(numberA, numberB);
+
+</script>
+</body>
+</html>

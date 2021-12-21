@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="nhapso"placeholder="NhapBanKinh">
+<input type="button" value="dientich" onclick="dienTich()">
+<input type="button" value="chuvi" onclick="chuVi()">
+<p>Ket Qua: <span id="display"></span></p>
+<script>
+    function dienTichHinhTron(a) {
+     return a*a*3.14;
+    }
+    function chuViHinhTron(a) {
+        return a*2*3.14;
+    }
+    function dienTich() {
+        let number1 = document.getElementById("nhapso").value;
+        let ketQuaDt= dienTichHinhTron(number1);
+        document.getElementById("display").innerHTML=ketQuaDt;
+    }
+    function chuVi() {
+        let number2 = document.getElementById("nhapso").value;
+        let ketQuaCv = chuViHinhTron(number2);
+        document.getElementById("display").innerHTML = ketQuaCv;
+    }
+</script>
+</body>
+</html>
